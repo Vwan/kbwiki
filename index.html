@@ -233,6 +233,8 @@ Error message and password prompt
 
 <li>$:/state/toc/TableOfContents-Programming-972943814</li>
 
+<li>$:/state/toc/TableOfContents-TODO-972943814</li>
+
 <li>$:/state/toc/TableOfContents-中药-972943814</li>
 
 <li>$:/state/toc/TableOfContents-伤寒论-972943814</li>
@@ -479,9 +481,7 @@ Error message and password prompt
 
 <li>Bus Factor</li>
 
-<li>DOP</li>
-
-<li>Draft of 'OOP vs DOP'</li>
+<li>Functional Programming References</li>
 
 <li>OOP vs DOP</li>
 
@@ -489,9 +489,15 @@ Error message and password prompt
 
 <li>Programming</li>
 
+<li>References</li>
+
+<li>Scheme References</li>
+
 <li>Tiddlywiki References</li>
 
 <li>TOC</li>
+
+<li>TODO</li>
 
 <li>What languages should hackers learn</li>
 
@@ -10067,6 +10073,9 @@ Error message and password prompt
 <div created="20180718082534586" modified="20180718082534586" title="$:/state/toc/TableOfContents-Programming-972943814">
 <pre>open</pre>
 </div>
+<div created="20180722132609887" modified="20180722132609887" title="$:/state/toc/TableOfContents-TODO-972943814">
+<pre>open</pre>
+</div>
 <div created="20180715044832443" modified="20180715044832443" title="$:/state/toc/TableOfContents-中药-972943814">
 <pre>open</pre>
 </div>
@@ -10100,7 +10109,7 @@ Error message and password prompt
 <div created="20180715044704755" modified="20180715044704755" title="$:/state/toc/TableOfContents/伤寒论-少阳病-972943814">
 <pre>open</pre>
 </div>
-<div list="DOP [[Draft of 'OOP vs DOP']] [[Bus Factor]] [[Program in most powerful language]] 哪儿人多你别去哪儿 [[What languages should hackers learn]] 开发瘫痪症 TOC [[Tiddlywiki References]]" title="$:/StoryList">
+<div list="References [[Scheme References]] TODO [[Functional Programming References]] [[OOP vs DOP]] [[Bus Factor]] [[Program in most powerful language]] 哪儿人多你别去哪儿 [[What languages should hackers learn]] 开发瘫痪症 TOC [[Tiddlywiki References]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11040,45 +11049,35 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 
 实际项目中，这种风险得预估的。</pre>
 </div>
-<div created="20180722081123563" modified="20180722082425245" tags="Programming" title="DOP" type="text/x-markdown">
-<pre>short for Data oriented Programing
-
-不太符合人类思维，需要刻意训练，转变一下思维方式</pre>
+<div created="20180722131545483" modified="20180722133307323" tags="References" title="Functional Programming References" type="text/x-markdown">
+<pre>
+## References
+[Manning | Real-World Functional Programming](https://www.manning.com/books/real-world-functional-programming)
+</pre>
 </div>
-<div created="20180722080222828" draft.of="OOP vs DOP" draft.title="OOP vs DOP" modified="20180722083119467" tags="Programming" title="Draft of 'OOP vs DOP'" type="text/x-markdown">
-<pre>## 区别
-
-OOP：将现实世界转换成Objects， 符合人类的认知模式。
-
-DOP：将现实世界转换成Data，思维模式稍难，需要刻意训练下。
-
-
-### OOP：
+<div created="20180722080222828" modified="20180722132911927" tags="Programming TODO" title="OOP vs DOP" type="text/x-markdown">
+<pre>### OOP：将现实世界转换成Objects， 符合人类的认知模式。
 
 &gt; Basically, OOP’s main focus is on attaching functionality to particular pieces of data
 
 data、functions有访问权限. 不能愉快的在各class中调用
 
-- 以java为例，public,protected,private,default。
+- 以java为例，public,protected,private,default。不同类或父子类之间的数据访问是规定好了的。父子类的数据虽然在父类基础上同质，但是还是区分了，比如子类可以有子类特有的数据
 
-### DOP
+### DOP：将现实世界转换成Data，思维模式稍难，需要刻意训练下。
 
-Common Functions：
+General-Purpose Functions：大家都可以访问，无限制
 
-Ho
+homogenous Data：同质数据
 
-## Reference
-[What is the difference between functional and object oriented programming? | Packt Hub](https://hub.packtpub.com/what-difference-between-functional-and-object-oriented-programming/)</pre>
-</div>
-<div created="20180722080222828" modified="20180722080916358" tags="Programming" title="OOP vs DOP" type="text/x-markdown">
-<pre>## 缺点：
-
-data，functions的访问受限. 不能痛快的在各class中调用
-
-- 以java为例，public,protected,private,default
+似乎是在一个较大的维度上观察数据，比如动物和猫狗，在动物层级上很多数据是同质的，而在猫狗层级上则很多数据是异质的。【TODO：具体实例待加】
 
 ## Reference
-[What is the difference between functional and object oriented programming? | Packt Hub](https://hub.packtpub.com/what-difference-between-functional-and-object-oriented-programming/)</pre>
+[What is the difference between functional and object oriented programming? | Packt Hub](https://hub.packtpub.com/what-difference-between-functional-and-object-oriented-programming/)
+
+[Data-Oriented vs Object-Oriented Design – Jonathan Mines – Medium](https://medium.com/@jonathanmines/data-oriented-vs-object-oriented-design-50ef35a99056)
+
+[Programming Paradigms: Object Oriented vs Data Oriented | PERPETUAL ENIGMA](https://prateekvjoshi.com/2013/11/30/programming-paradigms-object-oriented-vs-data-oriented/)</pre>
 </div>
 <div created="20180718135122539" modified="20180718135501877" tags="Programming [[Beating the Averages]] [[Paul Graham]] LISP" title="Program in most powerful language" type="text/x-markdown">
 <pre>[Beating the Averages](http://www.paulgraham.com/avg.html)
@@ -11088,7 +11087,16 @@ data，functions的访问受限. 不能痛快的在各class中调用
 <div created="20180718080251603" modified="20180718080312707" tags="TableOfContents" title="Programming">
 <pre></pre>
 </div>
-<div created="20180715033911512" modified="20180715080942443" tags="TableOfContents tiddlywiki [[cheat sheet]]" title="Tiddlywiki References" type="text/x-markdown">
+<div created="20180722133155952" modified="20180722133207474" tags="TableOfContents" title="References">
+<pre></pre>
+</div>
+<div created="20180722132947036" modified="20180722133254859" tags="References" title="Scheme References" type="text/x-markdown">
+<pre>
+## [Yet Another Scheme Tutorial](http://www.shido.info/lisp/idx_scm_e.html)
+
+## The Little Schemer</pre>
+</div>
+<div created="20180715033911512" modified="20180722133329246" tags="References tiddlywiki [[cheat sheet]]" title="Tiddlywiki References" type="text/x-markdown">
 <pre>## [TW5 Magick — Some tricks and snippets for TiddlyWiki 5](http://tw5magick.tiddlyspot.com/)
 
 ## [Cheat Sheet hints.pdf](http://www.tcm.phy.cam.ac.uk/~mdt26/PWT/hints.pdf)
@@ -11103,6 +11111,9 @@ data，functions的访问受限. 不能痛快的在各class中调用
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 &lt;&lt;toc-selective-expandable 'TableOfContents' sort[title]&gt;&gt;
 &lt;/div&gt;</pre>
+</div>
+<div created="20180722132554481" modified="20180722132604936" tags="TableOfContents" title="TODO" type="text/x-markdown">
+<pre></pre>
 </div>
 <div created="20180718134332566" modified="20180718135453600" tags="Programming [[Eric Raymond]] [[How to become a hacker]] 选择 LISP" title="What languages should hackers learn" type="text/x-markdown">
 <pre>## 准黑客：
